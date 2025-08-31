@@ -1,11 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dr. Max — коротка стаття</title>
+    <meta
+      name="description"
+      content="Коротка стаття про аптечну мережу Dr. Max: хто вони, чим корисні, послуги та контакти."
+    />
   </head>
   <body>
-    <h1>Hi people</h1>
+    <header>
+      <h1>Dr. Max — аптечна мережа</h1>
+      <!-- Можеш додати логотип тут -->
+      <!-- <img src="logo.png" alt="Логотип Dr. Max" width="140" height="auto"> -->
+    </header>
+
+    <main>
+      <article>
+        <section aria-labelledby="about">
+          <h2 id="about">Коротко про компанію</h2>
+          <p>
+            <strong>Dr. Max</strong> — одна з найбільших аптечних мереж у
+            Центральній Європі. Мета — робити фармацевтичні послуги та товари
+            доступними, а консультації — зрозумілими й корисними для людей.
+          </p>
+        </section>
+
+        <section aria-labelledby="services">
+          <h2 id="services">Що пропонують</h2>
+          <ul>
+            <li>Рецептурні та безрецептурні ліки</li>
+            <li>Вітаміни, БАДи, товари для здоров’я та краси</li>
+            <li>Консультації фармацевтів у залі та онлайн</li>
+            <li>Програма лояльності та акційні пропозиції</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="benefits">
+          <h2 id="benefits">Переваги</h2>
+          <p>
+            Зручні локації, широкий асортимент і зрозумілі ціни. Часто є
+            можливість резервувати товари онлайн і забирати в обраній аптеці.
+          </p>
+        </section>
+
+        <section aria-labelledby="contacts">
+          <h2 id="contacts">Контакти та посилання</h2>
+          <p>
+            Актуальні адреси аптек і години роботи дивись на офіційному сайті
+            компанії.
+          </p>
+          <!-- Замініть # на реальне посилання, якщо потрібно -->
+          <p><a href="#" rel="noopener">Офіційний сайт Dr. Max</a></p>
+        </section>
+
+        <footer>
+          <p>
+            <small
+              >© <span id="year"></span> Інформаційна сторінка про Dr. Max
+              (неофіційна).</small
+            >
+          </p>
+        </footer>
+      </article>
+    </main>
+
+    <script>
+      // Підставляємо поточний рік у футері
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
